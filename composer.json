@@ -1,0 +1,34 @@
+{
+	"name": "pessek/friend_request",
+	"description": "Let users confirm friend requests. Make friends like on Facebook or LinkedIn",
+	"type": "elgg-plugin",
+	"keywords": ["elgg", "plugin", "friends"],
+	"license": "proprietary",
+	"authors": [
+		{
+			"name": "Hermand PESSEK",
+			"email": "rhemandaddy@gmail.com"
+		}
+	],
+	"extra": {
+		"installer-name": "friend_request"
+	},
+	"require": {
+		"php": ">=7.4",
+		"composer/installers": "^1.0.8"
+	},
+	"autoload": {
+		"psr-0": {
+			"": "classes/"
+		}
+	},
+	"repositories": [
+		{
+            		"type": "composer",
+            		"url": "https://asset-packagist.org"
+		}
+	],
+        "conflict": {
+                "elgg/elgg": "<4.0"
+        }
+}
